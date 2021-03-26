@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using appcompras.Models;
 
-namespace appcompras.Controllers
+namespace appcompras.Controllers 
 {
     public class ProductoController : Controller
     {
@@ -20,7 +20,19 @@ namespace appcompras.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Message"] = "";
             return View();
+        }
+        [HttpPost]
+        public IActionResult Execute(Producto objproducto)
+        {
+            Double result = 0.0;
+            if("Comprar"== objproducto.accion)
+            {
+                result=(objproducto.cantidad*objproducto.precio)*1.18;
+            }
+            ViewData["Message"]= "El total de compra más IGV es:" +result;
+            return View("Index");
         }
     }
 }

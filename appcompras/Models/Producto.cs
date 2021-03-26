@@ -7,6 +7,7 @@ namespace appcompras.Models
         public String nombreproducto {get; set;}
         public double precio {get; set;}
         public int cantidad {get; set;}
+        public String accion {get; set;}
 
     }
 }

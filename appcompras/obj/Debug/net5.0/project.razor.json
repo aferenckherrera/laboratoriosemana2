@@ -15608,6 +15608,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\2021\\PROGRAMACION 1\\PROYECTOS\\laboratoriosemana2\\appcompras\\Views\\Producto\\index.cshtml",
+      "TargetPath": "Views\\Producto\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\2021\\PROGRAMACION 1\\PROYECTOS\\laboratoriosemana2\\appcompras\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
