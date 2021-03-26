@@ -27,11 +27,13 @@ namespace appcompras.Controllers
         public IActionResult Execute(Producto objproducto)
         {
             Double result = 0.0;
+            String message ="";
             if("Comprar"== objproducto.accion)
             {
                 result=(objproducto.cantidad*objproducto.precio)*1.18;
+                message="El total de compra más IGV es:" +result;
             }
-            ViewData["Message"]= "El total de compra más IGV es:" +result;
+            ViewData["Message"]= message;
             return View("Index");
         }
     }
