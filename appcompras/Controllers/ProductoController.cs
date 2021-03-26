@@ -22,7 +22,5 @@ namespace appcompras.Controllers
         {
             return View();
         }
-
-        
     }
 }
